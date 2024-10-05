@@ -6,8 +6,8 @@ import sys
 import os
 
 # Set the target URL and port
-target_url = "http://example.com"
-target_port = 80
+target_url = input("Target url: ")
+target_port = input("Port(80): ")
 
 # Set the number of threads to use
 num_threads = 10000
@@ -19,7 +19,7 @@ attack_duration = 60
 zombie_urls = []
 
 # Open the text file with the zombie URLs
-with open("zombie_urls.txt", "r") as file:
+with open("zombies.txt", "r") as file:
     for line in file:
         zombie_urls.append(line.strip())
 
